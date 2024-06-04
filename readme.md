@@ -2,7 +2,7 @@
 
 ## Description
 
-A portfolio to showcase web development skills created using React.
+A portfolio to showcase web development skills created using React
 
 ## User Story
 
