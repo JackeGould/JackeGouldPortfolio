@@ -1,0 +1,52 @@
+.nav {
+    width: 100%;
+    display: flex;
+    justify-content: center; /* Center aligns the flex items horizontally */
+}
+
+.nav-tabs {
+    list-style: none; /* Removes default list styling */
+    display: flex;
+    justify-content: center; /* Center nav items horizontally */
+    padding: 0;
+    margin: 0;
+}
+
+.nav-item {
+    margin: 0 15px; /* Adds horizontal spacing between the nav items */
+}
+
+.nav-item a {
+    color: #000;
+    font-size: 16px;
+    text-decoration: none; /* Remove default underline */
+    border: 1px solid black; /* Add a black border */
+    padding: 5px 10px; /* Add some padding to space the border from the text */
+    display: inline-block;
+    border-radius: 20px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.nav-line {
+    width: 100vw; /* Span the entire viewport width */
+    height: 1px;
+    background-color: black; /* Color of the line */
+    margin-top: 20px; /* Add some space above the line */
+}
+
+/* Media query for screens 460px wide or less */
+@media (max-width: 460px) {
+    .nav {
+        width: 100%;
+        justify-content: center; /* Ensure the nav container is centered */
+    }
+
+    .nav-tabs {
+        flex-direction: column; /* Change to vertical layout */
+        align-items: center; /* Center items horizontally */
+    }
+
+    .nav-item {
+        margin: 10px 0; /* Adds vertical spacing between the nav items */
+    }
+}
