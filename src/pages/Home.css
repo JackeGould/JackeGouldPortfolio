@@ -1,0 +1,61 @@
+.main {
+    padding: 20px, 0px;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
+    font-size: 2vw;
+  }
+  
+  .year, .project {
+    margin: 0;
+  }
+  
+  .title {
+    text-align: left;
+    margin-top: 20px;
+  }
+
+  .line {
+    width: 100vw; /* Span the entire viewport width */
+    height: 1px;
+    background-color: black; /* Color of the line */
+    margin-top: 20px; /* Add some space above the line */
+    padding-bottom: 0px;
+  }
+
+  .line2 {
+    width: 100vw; /* Span the entire viewport width */
+    height: 1px;
+    background-color: black; /* Color of the line */
+    margin-top: 20px; /* Add some space above the line */
+    margin-bottom: 30px;
+    padding-bottom: 0px;
+  }
+
+  .banner {
+    padding-top: 20px;
+    justify-content: center;
+    text-align: center;
+    font-size: 10vw;
+    color: #E4F060;
+    width: 100%;
+    height: 80%; /* Adjust the height as needed */
+    background-image: url('../src/assets/images/jacke.JPG'); /* Replace with your image path */
+    background-size: cover; /* Cover the entire banner area */
+    background-position: center; /* Center the background image */
+    display: flex;
+    align-items: center; /* Center items vertically */
+    position: relative;
+  }
+  
+  .name {
+    position: relative;
+    top: -90px; /* Move the name up */
+    line-height: 0.9; /* Reduce line height to reduce spacing between lines */
+  }
+
+
