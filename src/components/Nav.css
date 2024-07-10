@@ -1,64 +1,88 @@
+/* General Nav Styles */
 .nav {
     width: 100%;
     display: flex;
-    justify-content: center; /* Center aligns the flex items horizontally */;
+    justify-content: center;
 }
 
 .nav-tabs {
-    list-style: none; /* Removes default list styling */
+    list-style: none;
     display: flex;
-    justify-content: center; /* Center nav items horizontally */
+    justify-content: center;
     padding-top: 10px;
     padding-left: 0px;
     padding-right: 0px;
     margin: 0;
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-}
-
-.nav-item a:hover {
-    background-color: #E4F060;
-    color: #000;
+    /* filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)); */
 }
 
 .nav-item {
-    margin: 0 15px; /* Adds horizontal spacing between the nav items */
+    margin: 0 15px;
 }
 
 .nav-item a {
     color: #000;
     font-size: 14px;
-    text-decoration: none; /* Remove default underline */
-    border: 1px solid black; /* Add a black border */
-    padding: 5px 10px; /* Add some padding to space the border from the text */
+    text-decoration: none;
+    border: 1px solid black;
+    padding: 5px 10px;
     display: inline-block;
     border-radius: 20px;
+    /* filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)); */
+}
+
+.other-nav-item a {
+    background-color: #FFF;
+}
+
+.home-button a {
+    background-color: #FFF;
+}
+
+/* Home Page Hover Style */
+.home-nav-item a:hover {
+    background-color: #E4F060;
+    color: #000;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+/* Other Pages Hover Style */
+.other-nav-item a:hover {
+    background-color: black;
+    color: #FFF;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.home-button a:hover {
+    background-color: black;
+    color: #FFF;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
 .nav-line {
-    width: 100vw; /* Span the entire viewport width */
+    width: 100vw;
     height: 1px;
-    background-color: black; /* Color of the line */
-    margin-top: 20px; /* Add some space above the line */
+    background-color: black;
+    margin-top: 20px;
     padding: 0px;
 }
 
-/* Media query for screens 460px wide or less */
+/* Media Query for Small Screens */
 @media (max-width: 525px) {
     .nav {
         width: 100%;
-        justify-content: center; /* Ensure the nav container is centered */
+        justify-content: center;
     }
 
     .nav-tabs {
-        flex-direction: column; /* Change to vertical layout */
-        align-items: center; /* Center items horizontally */
+        flex-direction: column;
+        align-items: center;
         filter: none;
         padding: 0px;
     }
 
     .nav-item {
-        margin: 5px 0; /* Adds vertical spacing between the nav items */
+        margin: 5px 0;
         width: 100%;
     }
 

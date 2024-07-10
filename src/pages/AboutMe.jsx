@@ -1,8 +1,21 @@
 import './AboutMe.css';
 
 function AboutMe() {
+
+  // const pageStyle = {
+  //   backgroundColor: '#E4F060', // Replace with your desired color
+  //   height: '100vh', // Ensure it covers the full viewport height
+  //   width: '100vw', // Ensure it covers the full viewport width
+  //   margin: '0px', // Remove default margin
+  //   padding: '0px', // Remove default padding
+  //   display: 'flex',
+  //   justifyContent: 'center', // Center content horizontally
+  // };
+
   return (
-    <div className="aboutme-container pt-4 pb-5">
+    <body>
+      
+    {/* <div style={pageStyle}> */}
       <section className="content">
         <article id="about-me" className="about-me">
           <h2 className="section-title">About Me</h2>
@@ -29,7 +42,8 @@ function AboutMe() {
           </div>
         </article>
       </section>
-    </div>
+    {/* </div> */}
+    </body>
   );
 }
 

@@ -9,12 +9,13 @@ function Home() {
       </div>
       <div className='line'></div>
       <div className="title">
-      <h3>Full Stack<br />Design Studio</h3>
-        
+        <h3>Full Stack<br />Design Studio</h3>
       </div>
       <div className='line2'></div>
       <div className='banner'>
-        <h1 className='name'>Jacke <br />Gould</h1></div>
+        <p className='moving-text'>Graphic Designer, UI Designer, Full Stack Developer</p>
+        <h1 className='name'>Jacke <br />Gould</h1>
+      </div>
     </div>
   );
 }

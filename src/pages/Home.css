@@ -1,12 +1,12 @@
 .main {
-    padding: 20px, 0px;
+    padding: 10px 0;
   }
   
   .header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 10px;
+    padding-top: 0px;
     font-size: 2vw;
   }
   
@@ -16,26 +16,21 @@
   
   .title {
     text-align: left;
+    margin-top: 0px;
+  }
+  
+  .line, .line2 {
+    width: 100vw;
+    height: 1px;
+    background-color: black;
     margin-top: 20px;
+    padding-bottom: 0;
   }
-
-  .line {
-    width: 100vw; /* Span the entire viewport width */
-    height: 1px;
-    background-color: black; /* Color of the line */
-    margin-top: 20px; /* Add some space above the line */
-    padding-bottom: 0px;
-  }
-
+  
   .line2 {
-    width: 100vw; /* Span the entire viewport width */
-    height: 1px;
-    background-color: black; /* Color of the line */
-    margin-top: 20px; /* Add some space above the line */
     margin-bottom: 30px;
-    padding-bottom: 0px;
   }
-
+  
   .banner {
     padding-top: 20px;
     justify-content: center;
@@ -44,18 +39,45 @@
     color: #E4F060;
     width: 100%;
     height: 80%; /* Adjust the height as needed */
-    background-image: url('../src/assets/images/jacke.JPG'); /* Replace with your image path */
-    background-size: cover; /* Cover the entire banner area */
-    background-position: center; /* Center the background image */
+    background-image: url('../src/assets/images/jacke.JPG');
+    background-size: cover;
+    background-position: center;
     display: flex;
-    align-items: center; /* Center items vertically */
+    align-items: center;
     position: relative;
+    flex-direction: column;
+    overflow: hidden; /* Ensure content does not overflow */
   }
   
   .name {
     position: relative;
-    top: -90px; /* Move the name up */
-    line-height: 0.9; /* Reduce line height to reduce spacing between lines */
+    top: -50px;
+    line-height: 0.9;
   }
+  
+  .moving-text {
+    position: absolute;
+    top: 0;
+    left: -100%; /* Start from outside the left edge */
+    width: 200%; /* Ensure text spans the entire width */
+    text-align: left;
+    font-size: 3vw;
+    white-space: nowrap; /* Prevent text from wrapping */
+    animation: moveText 20s linear infinite; /* Apply the animation */
+  }
+  
+  @keyframes moveText {
+    0% {
+      transform: translateX(0); /* Start from the left edge */
+    }
+    100% {
+      transform: translateX(100%); /* Move to the right edge */
+    }
+  }
+  
+  
+  
+  
+  
 
 

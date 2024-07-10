@@ -5,9 +5,15 @@
   font-style: normal;
 }
 
+:root {
+  width: 100vw;
+}
+
 body {
   font-family: 'Michroma';
 }
+
+
 
 /* :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
