@@ -2,7 +2,7 @@ import ReactDOM from 'react-dom/client';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 
 // Importing the pages for routing
-import App from './App.jsx';
+import App from './App';
 import './index.css';
 import Home from './pages/Home';
 import AboutMe from './pages/AboutMe';
