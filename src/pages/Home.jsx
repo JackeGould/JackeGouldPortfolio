@@ -5,7 +5,7 @@ function Home() {
     <div className="main">
       <div className="header">
         <h1 className="year">2024</h1>
-        <h1 className="project">Portfolio</h1>
+        <h1 className="site">Portfolio</h1>
       </div>
       <div className='line'></div>
       <div className="title">

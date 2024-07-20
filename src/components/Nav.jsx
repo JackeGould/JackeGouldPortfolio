@@ -72,7 +72,7 @@ function Nav({ changeColor }) {
           <Link
             to="/aboutme"
             className={currentPage === '/aboutme' ? 'nav-link active' : 'nav-link'}
-            onClick={() => changeColor('#E4F060')}
+            onClick={() => changeColor('#EBFF00')}
           >
             About Me
           </Link>
@@ -81,7 +81,7 @@ function Nav({ changeColor }) {
           <Link
             to="/portfolio"
             className={currentPage === '/portfolio' ? 'nav-link active' : 'nav-link'}
-            onClick={() => changeColor('#E4F060')}
+            onClick={() => changeColor('#EBFF00')}
           >
             My Work
           </Link>
@@ -90,7 +90,7 @@ function Nav({ changeColor }) {
           <Link
             to="/contact"
             className={currentPage === '/contact' ? 'nav-link active' : 'nav-link'}
-            onClick={() => changeColor('#E4F060')}
+            onClick={() => changeColor('#EBFF00')}
           >
             Contact
           </Link>

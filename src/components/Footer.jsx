@@ -1,3 +1,4 @@
+import { FaGithub, FaLinkedin } from 'react-icons/fa'; // Using react-icons for icons
 import './Footer.css';
 
 function Footer() {
@@ -6,12 +7,11 @@ function Footer() {
       <div className="container">
         <p>Connect with me:</p>
         <a href="https://github.com/JackeGould" target="_blank" rel="noopener noreferrer" className="text-light mx-2">
-          {/* <FaGithub size={30} /> */}
+          <FaGithub size={30} />
         </a>
-        <a href="www.linkedin.com/in/jacklyngould" target="_blank" rel="noopener noreferrer" className="text-light mx-2">
-          {/* <FaLinkedin size={30} /> */}
+        <a href="https://www.linkedin.com/in/jacklyngould" target="_blank" rel="noopener noreferrer" className="text-light mx-2">
+          <FaLinkedin size={30} />
         </a>
-
       </div>
     </footer>
   );
