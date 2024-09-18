@@ -21,3 +21,9 @@
     justify-content: center;
     align-items: center;
   }
+
+  .editorial img {
+    width: 100%;       /* Makes the image responsive */
+    max-width: 500px;  /* Limits the image width to 500px */
+    height: auto;      /* Maintains the aspect ratio */
+  }

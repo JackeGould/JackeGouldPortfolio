@@ -52,13 +52,19 @@
 
 // export default App;
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { Outlet } from 'react-router-dom';
 import Nav from './components/Nav';
 import Footer from './components/Footer';
 
 function App() {
-  const [color, changeColor] = useState('#FFFFFF'); // Default color is white for Home
+  // Get the color from localStorage, or default to white if not present
+  const [color, changeColor] = useState(localStorage.getItem('bgColor') || '#FFFFFF');
+
+  // Update localStorage whenever the color changes
+  useEffect(() => {
+    localStorage.setItem('bgColor', color);
+  }, [color]);
 
   return (
     <div style={{ backgroundColor: color, minHeight: '100vh' }}>

@@ -22,6 +22,8 @@ function AboutMe() {
 
           <div className="about-me-text">
 
+          <h2>Do I need to introduce myself?</h2>
+
             <h2>Hi, my name is Jacke.</h2>
 
             <p>
