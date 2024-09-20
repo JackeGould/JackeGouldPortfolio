@@ -13,14 +13,14 @@
     padding-left: 0px;
     padding-right: 0px;
     margin: 0;
-    /* filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)); */
 }
 
 .nav-item {
     margin: 0 15px;
+    position: relative; /* Needed for dropdown positioning */
 }
 
-.nav-item a {
+.nav-item a, .nav-link {
     color: #000;
     font-size: 14px;
     text-decoration: none;
@@ -28,10 +28,9 @@
     padding: 5px 10px;
     display: inline-block;
     border-radius: 20px;
-    /* filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)); */
 }
 
-.other-nav-item a {
+.other-nav-item a, .nav-link {
     background-color: #FFF;
 }
 
@@ -39,26 +38,90 @@
     background-color: #FFF;
 }
 
-/* Home Page Hover Style */
+/* Hover effect for Home button */
+.home-button a:hover {
+    background-color: #000;
+    color: #FFF;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+/* Home Page General Hover Effect */
 .home-nav-item a:hover {
     background-color: #EBFF00;
     color: #000;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
-/* Other Pages Hover Style */
+/* Other Pages General Hover Effect */
 .other-nav-item a:hover {
     background-color: black;
     color: #FFF;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
-.home-button a:hover {
+/* Dropdown Styles */
+.nav-item.dropdown .nav-link {
+    cursor: pointer;
+    background-color: #FFF;
+}
+
+/* Hover effect for "My Work" based on the page */
+/* Home Page Hover Effect for "My Work" */
+.home-dropdown .nav-link:hover {
+    background-color: #EBFF00;
+    color: #000;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+/* Other Pages Hover Effect for "My Work" */
+.other-dropdown .nav-link:hover {
     background-color: black;
     color: #FFF;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
+/* Dropdown Menu */
+.dropdown-menu {
+    list-style: none; /* Remove bullet points */
+    position: absolute;
+    top: 100%; /* Positioned right under the My Work link */
+    left: 0;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    z-index: 1;
+    display: none; /* Hidden by default */
+    flex-direction: column;
+    width: 150px;
+    padding: 0;
+    margin: 0; /* Ensure there's no extra margin */
+}
+
+.nav-item.dropdown:hover .dropdown-menu {
+    display: flex; /* Display the dropdown on hover */
+}
+
+.dropdown-item {
+    padding: 10px;
+    text-align: left;
+    list-style: none; /* Ensures no bullets in dropdown */
+    margin: 0;
+}
+
+.dropdown-item a {
+    color: #000; /* Ensure consistency */
+    text-decoration: none;
+    font-size: 14px;
+    padding: 5px 10px;
+    display: block;
+}
+
+.dropdown-item a:hover {
+    background-color: #EBFF00; /* Matches the hover effect */
+    color: #000;
+}
+
+/* Line under the navigation */
 .nav-line {
     width: 100vw;
     height: 1px;
@@ -93,6 +156,12 @@
         background-color: #EBFF00;
         filter: none;
         display: block;
+    }
+
+    .dropdown-menu {
+        position: static; /* Dropdown positioning for mobile */
+        width: 100%; /* Full width in mobile */
+        border-radius: 0;
     }
 
     .nav-line {

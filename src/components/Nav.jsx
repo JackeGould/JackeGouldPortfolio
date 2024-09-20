@@ -48,11 +48,15 @@
 // export default Nav;
 
 import { Link, useLocation } from 'react-router-dom';
+import { useState } from 'react';
 import './Nav.css';
 
 function Nav({ changeColor }) {
   const currentPage = useLocation().pathname;
   const isHomePage = currentPage === '/home';
+  const [isDropdownOpen, setDropdownOpen] = useState(false);
+
+  const toggleDropdown = () => setDropdownOpen(!isDropdownOpen);
 
   return (
     <div>
@@ -77,15 +81,40 @@ function Nav({ changeColor }) {
             About Me
           </Link>
         </li>
-        <li className={`nav-item ${isHomePage ? 'home-nav-item' : 'other-nav-item'}`}>
-          <Link
-            to="/portfolio"
-            className={currentPage === '/portfolio' ? 'nav-link active' : 'nav-link'}
-            onClick={() => changeColor('#EBFF00')}
+
+        {/* Dropdown for My Work */}
+        <li className={`nav-item dropdown ${isHomePage ? 'home-dropdown' : 'other-dropdown'}`}>
+          <span
+            className={`nav-link ${currentPage === '/portfolio' ? 'active' : ''}`}
+            onClick={toggleDropdown}
           >
             My Work
-          </Link>
+          </span>
+
+          {isDropdownOpen && (
+            <ul className="dropdown-menu">
+              <li className="dropdown-item">
+                <Link
+                  to="/portfolio/web-design"
+                  className="nav-link"
+                  onClick={() => { changeColor('#EBFF00'); setDropdownOpen(false); }}
+                >
+                  Web Design
+                </Link>
+              </li>
+              <li className="dropdown-item">
+                <Link
+                  to="/portfolio"
+                  className="nav-link"
+                  onClick={() => { changeColor('#EBFF00'); setDropdownOpen(false); }}
+                >
+                  Graphic Design
+                </Link>
+              </li>
+            </ul>
+          )}
         </li>
+
         <li className={`nav-item ${isHomePage ? 'home-nav-item' : 'other-nav-item'}`}>
           <Link
             to="/contact"
@@ -102,3 +131,5 @@ function Nav({ changeColor }) {
 }
 
 export default Nav;
+
+
