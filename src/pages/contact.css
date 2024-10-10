@@ -1,44 +1,52 @@
-.contact-container {
-    padding-top: 20px;
-    padding-bottom: 10px;
-  }
+/* Container that wraps the entire form */
+form {
+  display: flex;
+  flex-direction: column; /* Ensures form fields stack vertically */
+  justify-content: center;
+  align-items: center;
+  height: 60vh; /* Full viewport height */
+  max-width: 400px; /* Set a max width */
+  margin: 0 auto; /* Horizontally center the form */
+  padding: 20px;
+  /* background-color: rgb(233, 233, 233); Optional background */
+  border-radius: 5px; /* Optional rounded corners */
+  box-sizing: border-box; /* Include padding in element's total width/height */
+}
 
+/* Input and Textarea styles */
+form label {
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+  width: 100%;
+}
 
-  
-  .contact-content {
-    margin: 0 auto;
-    padding: 20px;
-    max-width: 400px;
-    border: 1px solid #757575; /* Add border style */
-    border-radius: 5px;
-    /* background-color: rgb(233, 233, 233); */
-  }
-  
-  .contact-form label {
-    font-size: 1.2rem;
-    margin-bottom: 5px;
-  }
-  
-  .contact-form input[type="text"],
-  .contact-form input[type="email"],
-  .contact-form textarea {
-    width: 100%;
-    font-size: 16px;
-    margin-bottom: 10px;
-  }
-  
-  .contact-form textarea {
-    resize: vertical;
-  }
-  
-  .contact-form button {
-    padding: 10px 20px;
-    font-size: 16px;
-    display: block;
-    margin: 0 auto;
-    background-color: #f0f0f0;
-    border-radius: 5px;
-    border-color: black;
-    border-width: thin;
-  }
-  
+form input[type="text"],
+form input[type="email"],
+form textarea {
+  width: 100%;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+form textarea {
+  resize: vertical;
+}
+
+/* Submit button styles */
+form input[type="submit"] {
+  padding: 10px 20px;
+  font-size: 16px;
+  display: block;
+  margin: 0 auto;
+  background-color: #f0f0f0;
+  border-radius: 5px;
+  border-color: black;
+  border-width: thin;
+}
+
+.message {
+  display: flex;
+  flex-direction: column; /* Ensures form fields stack vertically */
+  justify-content: center;
+  align-items: center;
+}

@@ -22,15 +22,14 @@ function AboutMe() {
 
           <div className="about-me-text">
 
-          <h2>Do I need to introduce myself?</h2>
+          <img className="intro" src="../src/assets/images/Intro1.png" alt="?" />
+
+          {/* <h2>Do I need to introduce myself?</h2> */}
 
             <h2>Hi, my name is Jacke.</h2>
 
             <p>
-              I am a multimedia artist and creative by heart. 
-              It was not until college that I had stumbled upon graphic design,
-              and in one of my later semesters web design specifically that I fell in love with. I decided to 
-              continue my education by attending a full stack coding bootcamp with Rutgers University.
+
 
             </p>
             <p>
@@ -42,6 +41,14 @@ function AboutMe() {
               mollitia, excepturi, voluptatem eveniet a dolor nobis ex veniam totam
               nostrum temporibus ad omnis nam rerum eligendi.
             </p>
+          </div>
+
+          <div className='skills-section'>
+            <h2 className='skills'>Technical Skills</h2>
+            <span className='skill-badge frontend'>HTML</span>
+            <span className='skill-badge frontend'>CSS</span>
+            <span className='skill-badge frontend'>JavaScript</span>
+            
           </div>
         </article>
       </section>

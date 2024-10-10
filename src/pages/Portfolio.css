@@ -27,3 +27,20 @@
     max-width: 500px;  /* Limits the image width to 500px */
     height: auto;      /* Maintains the aspect ratio */
   }
+
+
+  .image-row {
+    display: flex;
+    justify-content: space-around; /* Space between images */
+    gap: 20px; /* Optional: Adds space between images */
+  }
+  
+  .image-item {
+    text-align: center; /* Center-align text under each image */
+  }
+  
+  .image-item img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+  }

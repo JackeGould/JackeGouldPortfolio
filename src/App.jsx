@@ -67,7 +67,7 @@ function App() {
   }, [color]);
 
   return (
-    <div style={{ backgroundColor: color, minHeight: '100vh' }}>
+    <div style={{ backgroundColor: color, minHeight: '100vh'}}>
       <Nav changeColor={changeColor} />
       <main>
         <Outlet />

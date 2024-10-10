@@ -49,29 +49,40 @@ const projects = [
   function Portfolio() {
     return (
       <div className="portfolio-container">
-        <div className='editorial'>
-        <h2 className='section-title'>Editorial</h2>
-        <img src="../src/assets/images/14.png" style={{ width: '100%', maxWidth: '500px', height: 'auto' }}/>
-            <h3>Magazine Publication Layout & Design</h3>
-            <h4>Adobe Photoshop, Indesign</h4>
-            <img src="../src/assets/images/12.jpg" style={{ width: '100%', maxWidth: '500px', height: 'auto' }}/>
-            <h3>Magazine Publication Layout & Design</h3>
-            <h4>Adobe Photoshop, Indesign</h4>
-
-        </div>
+<div className='editorial'>
+  <h2 className='section-title'>Editorial</h2>
+  <div className='image-row'>
+    <div className='image-item'>
+      <img src="../src/assets/images/14.png" style={{ width: '100%', maxWidth: '500px', height: 'auto' }} />
+      <h3>Magazine Publication Layout & Design</h3>
+      <h4>Adobe Photoshop, Indesign</h4>
+    </div>
+    <div className='image-item'>
+      <img src="../src/assets/images/12.jpg" style={{ width: '100%', maxWidth: '500px', height: 'auto' }} />
+      <h3>Magazine Publication Layout & Design</h3>
+      <h4>Adobe Photoshop, Indesign</h4>
+    </div>
+  </div>
+</div>
 
         <div className='FTFO'>
-          <h2 className='section-title'>FTFO</h2>
-          <img src="../src/assets/images/99.png" style={{ width: '100%', maxWidth: '500px', height: 'auto' }}/>
-            <h3>Magazine Publication Layout & Design</h3>
-            <h4>Adobe Photoshop, Indesign</h4>
-            <img src="../src/assets/images/98.png" style={{ width: '100%', maxWidth: '500px', height: 'auto' }}/>
-            <h3>Magazine Publication Layout & Design</h3>
-            <h4>Adobe Photoshop, Indesign</h4>
-        </div>
+  <h2 className='section-title'>FTFO</h2>
+  <div className="image-row">
+    <div className="image-item">
+      <img src="../src/assets/images/99.png" alt="Magazine Layout 1" />
+      <h3>Magazine Publication Layout & Design</h3>
+      <h4>Adobe Photoshop, Indesign</h4>
+    </div>
+    <div className="image-item">
+      <img src="../src/assets/images/90.png" alt="Magazine Layout 2" />
+      <h3>Magazine Publication Layout & Design</h3>
+      <h4>Adobe Photoshop, Indesign</h4>
+    </div>
+  </div>
+</div>
         
 
-        <h2 className="section-title">Applications</h2>
+        {/* <h2 className="section-title">Applications</h2>
         <div className="project-grid">
           {projects.map((project, index) => (
             <div className="project-item" key={index}>
@@ -83,7 +94,7 @@ const projects = [
               />
             </div>
           ))}
-        </div>
+        </div> */}
       </div>
 
           
