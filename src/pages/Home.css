@@ -11,12 +11,12 @@
   }
   
   .year, .site {
-    margin: 0;
+    margin: 0px 20px;
   }
   
   .title {
     text-align: left;
-    margin-top: 0px;
+    margin: 0px 20px;
   }
   
   .line, .line2 {

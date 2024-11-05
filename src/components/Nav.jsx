@@ -95,7 +95,7 @@ function Nav({ changeColor }) {
             <ul className="dropdown-menu">
               <li className="dropdown-item">
                 <Link
-                  to="/portfolio/web-design"
+                  to="/webdev"
                   className="nav-link"
                   onClick={() => { changeColor('#EBFF00'); setDropdownOpen(false); }}
                 >

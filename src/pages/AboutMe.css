@@ -1,9 +1,50 @@
-/* 
-
-.aboutme-container {
-    background-color: #E4F060;
-} */
+.content {
+    min-width: 1200px; /* Adjust as needed */
+    margin: 0px;
+    padding: 0px;
+}
 
 .intro {
     float: right;
 }
+/* 
+.hand {
+    width: 100%;
+} */
+
+.about-me-text {
+    margin: 0px 20px;
+}
+
+.skills-section {
+    margin: 0px 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.skill-badge {
+    color: white;
+    background-color: black;
+    font-size: 14px;
+    text-decoration: none;
+    border: 1px solid black;
+    padding: 5px 10px;
+    display: inline-block;
+    border-radius: 20px;
+    margin: 20px 0px;
+}
+
+.line2 {
+    width: 100vw; /* Full viewport width */
+    height: 1px;
+    background-color: black;
+    margin: 20px 0px 30px 0; /* Correct margin syntax (remove commas) */
+    padding-bottom: 0;
+    position: relative; /* Ensure it doesn't get affected by surrounding elements */
+    left: 0; /* Align to the left of the viewport */
+  }
+
+  .skills {
+    align-items: center;
+    justify-content: center;
+  }

@@ -1,7 +1,6 @@
-import './AboutMe.css';
+import "./AboutMe.css";
 
 function AboutMe() {
-
   // const pageStyle = {
   //   backgroundColor: '#E4F060', // Replace with your desired color
   //   height: '100vh', // Ensure it covers the full viewport height
@@ -14,45 +13,90 @@ function AboutMe() {
 
   return (
     <body>
-      
-    {/* <div style={pageStyle}> */}
+      {/* <div style={pageStyle}> */}
       <section className="content">
         <article id="about-me" className="about-me">
           <h2 className="section-title">About Me</h2>
+          <div className="line2"></div>
 
           <div className="about-me-text">
+            <img
+              className="intro"
+              src="../src/assets/images/Intro1.png"
+              alt="?"
+            />
+            {/* <img className="hand" src="../src/assets/images/hand.jpg" alt="?" /> */}
 
-          <img className="intro" src="../src/assets/images/Intro1.png" alt="?" />
-
-          {/* <h2>Do I need to introduce myself?</h2> */}
+            {/* <h2>Do I need to introduce myself?</h2> */}
 
             <h2>Hi, my name is Jacke.</h2>
 
+            <p></p>
             <p>
-
-
-            </p>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus
-              tenetur maiores, dolor iusto dolorum ullam, natus deleniti blanditiis
-              impedit suscipit sed magnam alias in, repellat expedita hic explicabo
-              architecto soluta. About us Lorem ipsum, dolor sit amet consectetur
-              adipisicing elit. Velit voluptate exercitationem quaerat pariatur
-              mollitia, excepturi, voluptatem eveniet a dolor nobis ex veniam totam
-              nostrum temporibus ad omnis nam rerum eligendi.
+              I am a certified Full Stack Web Developer specializing in User
+              Interface and Graphic Design. My journey has been driven by a
+              commitment to continuous learning and a desire to merge
+              functionality with aesthetic appeal, ensuring that every project
+              not only meets technical requirements but also resonates with
+              users on a deeper level. <br></br>
+              <br></br>I am a certified Full Stack Web Developer specializing in
+              User Interface and Graphic Design. My journey has been driven by a
+              commitment to continuous learning and a desire to merge
+              functionality with aesthetic appeal, ensuring that every project
+              not only meets technical requirements but also resonates with
+              users on a deeper level. <br></br>
+              <br></br>I am a certified Full Stack Web Developer specializing in
+              User Interface and Graphic Design. My journey has been driven by a
+              commitment to continuous learning and a desire to merge
+              functionality with aesthetic appeal, ensuring that every project
+              not only meets technical requirements but also resonates with
+              users on a deeper level. <br></br>
+              <br></br>I have experience in agile methodologies and am
+              passionate about working with teams to put forth the best product
+              possible.<br></br>
+              <br></br>I have always been a creative at heart, doodling where I
+              wasn't supposed to be for as long as I can remember. When I came
+              across graphic design and installed my first Adobe program, my
+              creativity felt purposeful and a newfound passion for the design
+              world erupted. Since then, I have continued to further my
+              knowledge in the web development and design world, incorporating
+              the latest technologies and design principles to create innovative
+              and user-friendly applications.
             </p>
           </div>
 
-          <div className='skills-section'>
-            <h2 className='skills'>Technical Skills</h2>
-            <span className='skill-badge frontend'>HTML</span>
-            <span className='skill-badge frontend'>CSS</span>
-            <span className='skill-badge frontend'>JavaScript</span>
-            
+          <div className="line2"></div>
+          <div className="skills-section">
+            <h2 className="skills">Technical Skills</h2>
+            <div className="line2"></div>
+
+            <span className="skill-badge design">InDesign</span>
+            <span className="skill-badge design">Illustrator</span>
+            <span className="skill-badge desgin">Photoshop</span>
+            <span className="skill-badge desgin">Canva</span>
+            <span className="skill-badge design">Figma</span>
+            <br></br>
+
+            <span className="skill-badge frontend">HTML</span>
+            <span className="skill-badge frontend">CSS</span>
+            <span className="skill-badge frontend">JavaScript</span>
+            <span className="skill-badge frontend">React</span>
+            <span className="skill-badge frontend">Bootstrap</span>
+            <br></br>
+
+            <span className="skill-badge backend">Node.js</span>
+            <span className="skill-badge backend">Express</span>
+            <br></br>
+
+            <span className="skill-badge databases">MySQL</span>
+            <span className="skill-badge databases">MongoDB</span>
+            <br></br>
+
+            <span className="skill-badge devops">Github</span>
           </div>
         </article>
       </section>
-    {/* </div> */}
+      {/* </div> */}
     </body>
   );
 }
