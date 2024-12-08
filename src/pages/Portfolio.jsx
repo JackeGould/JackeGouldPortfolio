@@ -151,7 +151,7 @@ function Portfolio() {
       </div>
 
       {/* FTFO Section with ID */}
-      <div id="ftfo" className="FTFO">
+      {/* <div id="ftfo" className="FTFO">
         <div className="line2"></div>
         <h2 className="section-title">FTFO</h2>
         <div className="line2"></div>
@@ -190,7 +190,7 @@ function Portfolio() {
               <h4>Adobe Photoshop, Indesign</h4>
             </div>
         </div>
-      </div>
+      </div> */}
 
       <div id="branding" className="branding">
         <div className="line2"></div>
