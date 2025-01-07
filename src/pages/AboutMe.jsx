@@ -12,22 +12,76 @@ function AboutMe() {
   // };
 
   return (
-    <body>
-      {/* <div style={pageStyle}> */}
-      <section className="content">
-        <article id="about-me" className="about-me">
-          <h2 className="section-title">About Me</h2>
-          <div className="line2"></div>
+<body>
+  <section className="content">
+    <article id="about-me" className="about-me">
+      <h1 className="section-title">Do I have to introduce myself?</h1>
+      <div className="line2"></div>
 
-          <div className="about-me-text">
+      <div className="split">
+        <div className="bg-left">
+          <h1>Hi, I'm Jacke.</h1>
+          <p>Allow me to introduce myself. I am a passionate designer and developer with a desire to learn. I am skilled in multiple areas
+            including graphic design, UI design, full stack devlopment and fine art. </p>
+
             <img
               className="intro"
-              src="../src/assets/images/Intro1.png"
-              alt="?"
-            />
-            {/* <img className="hand" src="../src/assets/images/hand.jpg" alt="?" /> */}
+              src="../src/assets/images/jacke4.jpg"
+              alt="?"/>
 
-            {/* <h2>Do I need to introduce myself?</h2> */}
+        </div>
+
+        <div className="bg-right">
+        <div className="skills-section">
+            <h2 className="skills">Technical Skills</h2>
+            <div className="line2"></div>
+
+            <span className="skill-badge design">InDesign</span>
+            <span className="skill-badge design">Illustrator</span>
+            <span className="skill-badge desgin">Photoshop</span>
+            <span className="skill-badge desgin">Canva</span>
+            <span className="skill-badge design">Figma</span>
+            <br></br>
+
+            <span className="skill-badge frontend">HTML</span>
+            <span className="skill-badge frontend">CSS</span>
+            <span className="skill-badge frontend">JavaScript</span>
+            <span className="skill-badge frontend">React</span>
+            <span className="skill-badge frontend">Bootstrap</span>
+            <br></br>
+
+            <span className="skill-badge backend">Node.js</span>
+            <span className="skill-badge backend">Express</span>
+            <br></br>
+
+            <span className="skill-badge databases">MySQL</span>
+            <span className="skill-badge databases">MongoDB</span>
+            <br></br>
+
+            <span className="skill-badge devops">Github</span>
+
+        </div>
+      </div>
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+{/* Original code */}
+
+
+          {/* <div className="about-me-text">
+            <img
+              className="intro"
+              src="../src/assets/images/jacke4.jpg"
+              alt="?"/>
 
             <h2>Hi, my name is Jacke.</h2>
 
@@ -93,10 +147,10 @@ function AboutMe() {
             <br></br>
 
             <span className="skill-badge devops">Github</span>
-          </div>
+          </div> */}
         </article>
       </section>
-      {/* </div> */}
+
     </body>
   );
 }
