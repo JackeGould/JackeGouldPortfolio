@@ -8,6 +8,7 @@ import Home from './pages/Home';
 import AboutMe from './pages/AboutMe';
 import Contact from './pages/Contact';
 import Portfolio from './pages/Portfolio';
+import Webdev from './pages/Webdev';
 
 const router = createBrowserRouter([
   {
@@ -33,6 +34,10 @@ const router = createBrowserRouter([
       {
         path: 'portfolio',
         element: <Portfolio />,
+      },
+      {
+        path: 'webdev',
+        element: <Webdev />,
       },
     ],
   },
