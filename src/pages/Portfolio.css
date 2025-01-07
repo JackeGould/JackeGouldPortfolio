@@ -53,3 +53,10 @@
 .nav a:hover {
   color: #E4F060;
 }
+
+
+/* Change the color of the section background - .image-row changes all, add custom classname to change individual section */
+
+/* .image-row {
+  background-color: #ddd;
+} */
