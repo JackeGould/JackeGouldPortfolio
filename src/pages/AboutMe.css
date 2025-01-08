@@ -3,6 +3,7 @@
     width: 100%;
     margin: 0;
     padding: 0;
+    color: #fff;
   }
   
   .split {
@@ -12,20 +13,20 @@
   
   .bg-left {
     width: 50%; /* Takes up 40% of the width */
-    background-color: #fff; /* Optional for debugging */
+    background-color: #000; /* Optional for debugging */
     padding: 20px;
   }
   
   .bg-right {
     width: 50%; /* Takes up 60% of the width */
-    background-color: #fff; /* Optional for debugging */
+    background-color: #000; /* Optional for debugging */
     padding: 20px 30px 20px 30px;
   }
   
   .line2 {
     width: 100vw; /* Full viewport width */
     height: 1px;
-    background-color: black;
+    background-color: #fff !important;
     margin: 20px 0px 30px 0; /* Correct margin syntax (remove commas) */
     padding-bottom: 0;
     position: relative; /* Ensure it doesn't get affected by surrounding elements */
@@ -39,8 +40,8 @@
 }
 
 .skill-badge {
-    color: white;
-    background-color: black;
+    color: #000;
+    background-color: #EBFF00;
     font-size: 14px;
     text-decoration: none;
     border: 1px solid black;
@@ -49,3 +50,7 @@
     border-radius: 20px;
     margin: 20px 0px;
 }
+/* 
+.section-title {
+    color: #EBFF00;
+} */

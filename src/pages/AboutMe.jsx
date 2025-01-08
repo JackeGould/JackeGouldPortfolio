@@ -15,6 +15,7 @@ function AboutMe() {
 <body>
   <section className="content">
     <article id="about-me" className="about-me">
+    <div className="line2"></div>
       <h1 className="section-title">Do I have to introduce myself?</h1>
       <div className="line2"></div>
 

@@ -54,12 +54,13 @@ import './Nav.css';
 function Nav({ changeColor }) {
   const currentPage = useLocation().pathname;
   const isHomePage = currentPage === '/home';
+  const isAboutMePage = currentPage === '/aboutme';
   const [isDropdownOpen, setDropdownOpen] = useState(false);
 
   const toggleDropdown = () => setDropdownOpen(!isDropdownOpen);
 
   return (
-    <div>
+    <div className={`nav-container ${isAboutMePage ? 'aboutme-page' : ''}`}>
       <ul className="nav nav-tabs">
         {!isHomePage && (
           <li className="nav-item home-button">
@@ -76,7 +77,7 @@ function Nav({ changeColor }) {
           <Link
             to="/aboutme"
             className={currentPage === '/aboutme' ? 'nav-link active' : 'nav-link'}
-            onClick={() => changeColor('#EBFF00')}
+            onClick={() => changeColor('#000')}
           >
             About Me
           </Link>
@@ -131,5 +132,6 @@ function Nav({ changeColor }) {
 }
 
 export default Nav;
+
 
 

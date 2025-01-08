@@ -70,6 +70,30 @@
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
+.nav-container.aboutme-page .nav-item a:hover {
+    background-color: #EBFF00; 
+    /* Example: Different hover color for About Me */
+    color: #000 !important;
+
+}
+
+/* Special hover styles for the "My Work" tab on About Me page */
+.nav-container.aboutme-page .nav-item.dropdown .nav-link:hover {
+    background-color: #EBFF00; /* Same color as other tabs */
+    color: #000 !important;
+  }
+  
+  /* Special hover styles for the dropdown menu items */
+  .nav-container.aboutme-page .dropdown-item a:hover {
+    background-color: #EBFF00; /* Same hover color as About Me page */
+    color: #000 !important;
+  }
+
+.about-button:hover {
+    background-color: #EBFF00;
+    color: #000;
+}
+
 /* Dropdown Styles */
 .nav-item.dropdown .nav-link {
     cursor: pointer;
@@ -91,10 +115,33 @@
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
+.nav ul {
+    padding: 0; /* Ensure no padding */
+    margin: 0;  /* Ensure no margin */
+    display: flex;
+    justify-content: center;
+    gap: 0px; /* Control spacing between items */
+    list-style: none; /* Remove bullets */
+  }
+
+  .dropdown-menu li {
+    margin: 0; /* Remove margins from list items */
+    padding: 5px; /* Remove padding from list items */
+}
+
+.dropdown-menu li a {
+    margin: 0; /* Remove margin from links */
+    padding: 10px; /* Optional: Add padding for clickable area */
+    text-decoration: none; /* Ensure no underline */
+    color: #000; /* Ensure consistent text color */
+    display: block; /* Ensure link takes full width */
+}
+
 /* Dropdown Menu */
 .dropdown-menu {
     list-style: none; /* Remove bullet points */
     position: absolute;
+    gap: 0px;
     top: 100%; /* Positioned right under the My Work link */
     left: 0;
     background-color: white;
@@ -108,13 +155,14 @@
     margin: 0; /* Ensure there's no extra margin */
 }
 
+
 .nav-item.dropdown:hover .dropdown-menu {
     display: flex; /* Display the dropdown on hover */
 }
 
 .dropdown-item {
-    padding: 10px;
-    text-align: left;
+    padding: 5px;
+    text-align: center;
     list-style: none; /* Ensures no bullets in dropdown */
     margin: 0;
 }
@@ -122,7 +170,7 @@
 .dropdown-item a {
     color: #000; /* Ensure consistency */
     text-decoration: none;
-    font-size: 14px;
+    font-size: 12px;
     padding: 5px 10px;
     display: block;
 }
