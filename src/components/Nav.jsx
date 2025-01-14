@@ -120,7 +120,7 @@ function Nav({ changeColor }) {
           <Link
             to="/contact"
             className={currentPage === '/contact' ? 'nav-link active' : 'nav-link'}
-            onClick={() => changeColor('#EBFF00')}
+            onClick={() => changeColor('#000')}
           >
             Contact
           </Link>

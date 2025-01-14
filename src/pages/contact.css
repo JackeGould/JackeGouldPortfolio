@@ -49,4 +49,84 @@ form input[type="submit"] {
   flex-direction: column; /* Ensures form fields stack vertically */
   justify-content: center;
   align-items: center;
+  color: #EBFF00
+}
+
+.message1 {
+  display: flex;
+  flex-direction: column; /* Ensures form fields stack vertically */
+  justify-content: center;
+  align-items: center;
+  color: #000;
+}
+
+.chat {
+  margin: 0;
+  padding: 10px;
+  background-color: #EBFF00;
+}
+
+.chat9 {
+  margin: 0;
+  padding: 10px;
+  color:#EBFF00;
+}
+
+
+.line4 {
+  width: 100vw; /* Full viewport width */
+  height: 1px;
+  background-color: #EBFF00 !important;
+  margin: 20px 0px 30px 0; /* Correct margin syntax (remove commas) */
+  padding-bottom: 0;
+  position: relative; /* Ensure it doesn't get affected by surrounding elements */
+  left: 0; /* Align to the left of the viewport */
+}
+
+/* Add margin to all inputs, textarea, and the submit button */
+form input[type="text"],
+form input[type="email"],
+form textarea[name] {
+  margin-bottom: 15px; /* Add spacing below each element */
+  padding: 10px; /* Optional: Add padding for better usability */
+  width: 100%; /* Optional: Make inputs fill the form width */
+  box-sizing: border-box; /* Include padding in width calculation */
+}
+
+/* Optional: Add margin to labels */
+form label {
+  display: block; /* Ensure labels are on their own line */
+  margin-bottom: 5px; /* Add spacing below the label */
+  font-weight: bold; /* Optional: Make labels bold */
+}
+
+/* Style the submit button separately if needed */
+form input[type="submit"] {
+  background-color: #4CAF50; /* Green background */
+  color: #000; /* White text */
+  border: none; /* Remove border */
+  border-radius: 5px; /* Round corners */
+  cursor: pointer; /* Pointer cursor */
+}
+
+form input[type="submit"]:hover {
+  background-color: #d9f4b9; /* Darker green on hover */
+}
+
+
+
+input[type="submit"] {
+  background-color: #EBFF00 !important ; /* Green background */
+  color: #000; /* White text */
+  border: none; /* Remove border */
+  padding: 10px 20px; /* Add padding for size */
+  font-size: 16px; /* Set font size */
+  border-radius: 5px; /* Round the corners */
+  cursor: pointer; /* Show pointer cursor on hover */
+  text-align: center; /* Center-align text */
+}
+
+/* Optional: Add a hover effect */
+input[type="submit"]:hover {
+  background-color: #45a049; /* Slightly darker green on hover */
 }

@@ -6,7 +6,7 @@ function Portfolio() {
 
       <div className="design">
         <h2 className="section-title">Graphic Design</h2>
-        <div className="line2"></div>
+        <div className="line3"></div>
         
         {/* Navigation Section */}
         <div className="nav">
@@ -20,12 +20,12 @@ function Portfolio() {
             </ul>
           </nav>
         </div>
-        <div className="line2"></div>
+        <div className="line3"></div>
 
         {/* Editorial Section with ID */}
         <div id="editorial" className="editorial">
           <h3 className="section-title">Editorial</h3>
-          <div className="line2"></div>
+          <div className="line3"></div>
           <div className="image-row">
           <div className="image-item">
               <img

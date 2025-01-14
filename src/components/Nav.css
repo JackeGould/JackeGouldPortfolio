@@ -7,7 +7,7 @@
 
 .nav-tabs {
     list-style: none;
-    display: flex;ç
+    display: flex;
     justify-content: center;
     padding-top: 10px;
     padding-left: 0px;
@@ -126,7 +126,7 @@
 
   .dropdown-menu li {
     margin: 0; /* Remove margins from list items */
-    padding: 5px; /* Remove padding from list items */
+    padding: px; /* Remove padding from list items */
 }
 
 .dropdown-menu li a {
