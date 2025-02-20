@@ -190,6 +190,22 @@
     padding: 0px;
 }
 
+.nav-container.contact-page .nav-item a:hover {
+    background-color: #EBFF00; /* Change this to your desired hover color */
+    color: black !important;
+}
+
+.contact-page .nav-item.dropdown .nav-link:hover {
+    background-color: #EBFF00 !important;
+    color: black !important;
+}
+
+/* Target dropdown menu items separately */
+.contact-page .dropdown-menu .dropdown-item a:hover {
+    background-color: #EBFF00 !important;
+    color: black !important;
+}
+
 
 /* Media Query for Small Screens */
 @media (max-width: 525px) {

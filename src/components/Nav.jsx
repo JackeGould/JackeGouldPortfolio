@@ -55,12 +55,13 @@ function Nav({ changeColor }) {
   const currentPage = useLocation().pathname;
   const isHomePage = currentPage === '/home';
   const isAboutMePage = currentPage === '/aboutme';
+  const isContactPage = currentPage === '/contact'; // Identify Contact Page
   const [isDropdownOpen, setDropdownOpen] = useState(false);
 
   const toggleDropdown = () => setDropdownOpen(!isDropdownOpen);
 
   return (
-    <div className={`nav-container ${isAboutMePage ? 'aboutme-page' : ''}`}>
+    <div className={`nav-container ${isAboutMePage ? 'aboutme-page' : ''} ${isContactPage ? 'contact-page' : ''}`}>
       <ul className="nav nav-tabs">
         {!isHomePage && (
           <li className="nav-item home-button">
@@ -132,6 +133,7 @@ function Nav({ changeColor }) {
 }
 
 export default Nav;
+
 
 
 
