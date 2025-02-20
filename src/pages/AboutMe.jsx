@@ -22,13 +22,12 @@ function AboutMe() {
       <div className="split">
         <div className="bg-left">
           <h1>Hi, I'm Jacke.</h1>
-          <p>Allow me to introduce myself. I am a passionate designer and developer. I am skilled in multiple areas
-            including graphic design, UI design, full stack devlopment and fine art. </p>
+          <p>I am a graphic designer and web developer with a love for learning and creating.  </p>
 
-            <img
+            {/* <img
               className="intro"
               src="../src/assets/images/jacke4.jpg"
-              alt="?"/>
+              alt="?"/> */}
 
         </div>
 

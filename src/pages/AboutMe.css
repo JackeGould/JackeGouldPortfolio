@@ -1,13 +1,15 @@
 .content {
-    display: flex; /* Use flexbox to align child elements horizontally */
+    /* display: flex !important; */
     width: 100%;
     margin: 0;
     padding: 0;
     color: #fff;
   }
   
+
   .split {
-    display: flex; /* Flexbox to align children side by side */
+    /* display: flex;  */
+    /* flex-wrap: wrap; */
     width: 100%;
   }
   
@@ -54,3 +56,13 @@
 .section-title {
     color: #EBFF00;
 } */
+
+/* Media Query for Small Screens */
+@media (max-width: 525px) {
+
+  .bg-left,
+  .bg-right {
+    width: 100%; /* Full width for smaller screens */
+  }
+
+}
