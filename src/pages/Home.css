@@ -19,7 +19,7 @@
     margin: 0px 20px;
   }
   
-  .line, .line2 {
+  .line, .line3 {
     width: 100vw;
     height: 1px;
     background-color: black;
@@ -27,7 +27,7 @@
     padding-bottom: 0;
   }
   
-  .line2 {
+  .line3 {
     margin-bottom: 30px;
   }
   

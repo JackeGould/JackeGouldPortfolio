@@ -57,6 +57,18 @@
 
 /* Change the color of the section background - .image-row changes all, add custom classname to change individual section */
 
-/* .image-row {
-  background-color: #ddd;
-} */
+.image-row, .branding {
+  background-color: #fff;
+}
+
+.bg-left {
+  width: 50%; /* Takes up 40% of the width */
+  background-color: #000; /* Optional for debugging */
+  padding: 20px;
+}
+
+.bg-right {
+  width: 50%; /* Takes up 60% of the width */
+  background-color: #000; /* Optional for debugging */
+  padding: 20px;
+}

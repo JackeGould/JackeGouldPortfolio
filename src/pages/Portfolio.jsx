@@ -6,7 +6,7 @@ function Portfolio() {
 
       <div className="design">
         <h2 className="section-title">Graphic Design</h2>
-        <div className="line2"></div>
+        <div className="line3"></div>
         
         {/* Navigation Section */}
         <div className="nav">
@@ -20,12 +20,12 @@ function Portfolio() {
             </ul>
           </nav>
         </div>
-        <div className="line2"></div>
+        <div className="line3"></div>
 
         {/* Editorial Section with ID */}
         <div id="editorial" className="editorial">
           <h3 className="section-title">Editorial</h3>
-          <div className="line2"></div>
+          <div className="line3"></div>
           <div className="image-row">
           <div className="image-item">
               <img
@@ -152,7 +152,28 @@ function Portfolio() {
         <div className="line2"></div>
         <h2 className="section-title">Branding</h2>
         <div className="line2"></div>
-        <div className="image-row">
+
+        <div className="bg-left">
+
+        <div className="image-item">
+              <img
+                src="../src/assets/images/67.png"
+                style={{ width: "100%", maxWidth: "500px", height: "auto" }}
+              />
+              </div>
+              <div className="image-item">
+              <img
+                src="../src/assets/images/mockup.png"
+                style={{ width: "100%", maxWidth: "500px", height: "auto" }}
+              />
+
+</div>
+
+<div className="bg-right"></div>
+
+
+        
+        {/* <div className="image-row">
           <div className="image-item">
             <img src="../src/assets/images/6.jpg" alt="Magazine Layout 1" />
             <h3>Magazine Publication Layout & Design</h3>
@@ -194,7 +215,7 @@ function Portfolio() {
               <h3>Magazine Publication Layout & Design</h3>
               <h4>Adobe Photoshop, Indesign</h4>
             </div>
-        </div>
+        </div> */}
       </div>
 
       <div id="info" className="info">
@@ -305,6 +326,7 @@ function Portfolio() {
       </div>
 
     </div>
+    </div>
 
 
 
@@ -341,4 +363,4 @@ function Portfolio() {
 //     )
 // }
 
-export default Portfolio;
+export default Portfolio; 
