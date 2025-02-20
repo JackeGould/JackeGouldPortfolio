@@ -31,8 +31,12 @@ export const Contact = () => {
 
   return (
     <>
+    {/* <div className="line4"></div> */}
       <div className='chat'>
-      <h1 className="message1">Let's chat!</h1>
+      <div className="message1-container">
+  <h1 className="message1">Let's Chat</h1>
+</div>
+
       </div>
       <div className="line4"></div>
       <h3 className="message">
