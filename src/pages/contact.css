@@ -1,6 +1,7 @@
 /* Container that wraps the entire form */
 form {
   display: flex;
+  min-height: 100vh;
   flex-direction: column; /* Ensures form fields stack vertically */
   justify-content: center;
   align-items: center;
@@ -68,19 +69,18 @@ form input[type="submit"] {
 }
 
 .chat9 {
-  margin: 0;
-  padding: 50px;
-  color:#EBFF00;
+  margin: 20px 0; /* Add margin for top and bottom spacing */
+  padding: 0px; /* Adjust padding for inner space */
+  color: #EBFF00;
 }
 
 .line4 {
-  width: 100vw; /* Full viewport width */
+  width: 100%; /* Make sure it uses the full width without causing overflow */
   height: 1px;
   background-color: #EBFF00 !important;
-  margin: 20px 0px 30px 0; /* Correct margin syntax (remove commas) */
-  padding-bottom: 0;
-  position: relative; /* Ensure it doesn't get affected by surrounding elements */
-  left: 0; /* Align to the left of the viewport */
+  margin: 20px 0 30px; /* Use shorthand for margin */
+  padding: 0; /* Reset padding */
+  position: relative;
 }
 
 /* Add margin to all inputs, textarea, and the submit button */
@@ -131,6 +131,31 @@ input[type="submit"]:hover {
   background-color: #45a049; /* Slightly darker green on hover */
 }
 
+form input,
+form textarea {
+    width: 100%; /* Match all input fields */
+    padding: 0px; 
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    /* box-sizing: border-box;  */
+}
+
+form textarea {
+    height: 100px; /* Increase height */
+    resize: vertical; /* Allows user to resize only vertically */
+    padding: 20px;
+}
+
+form textarea[name="message"] {
+  width: 100%;
+  padding: 10px; /* Add padding only to the message box */
+  font-size: 16px;
+  height: 200px; /* Adjust the height as needed */
+  min-height: 150px; /* Optional: ensures it doesn't get too small */
+  resize: vertical; /* Allows vertical resizing */
+}
+
 
 
 /* Media Query for Small Screens */
@@ -141,14 +166,14 @@ input[type="submit"]:hover {
   padding: 20px;
 }
 
-.line4 {
-  margin-bottom: 20px;
-}
-
 .chat9 {
-  padding: 50px;
+  padding-top: 20px; /* Adjust padding for small screens */
+}
+
+.line4 {
+  margin: 10px 0; /* Adjust margin for small screens */
+}
 }
 
 
 
-}
