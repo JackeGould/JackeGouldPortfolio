@@ -1,8 +1,23 @@
 .portfolio-container {
+  display: flex;
   min-width: 1200px;
   margin: 0;
   padding: 0;
 }
+
+.nav-bar {
+  padding: 20px;
+  text-align: center;
+}
+
+.ul {
+  padding: 20px;
+}
+
+li {
+text-decoration: none;
+}
+
 
 .section-title {
   text-align: center;
@@ -61,6 +76,10 @@
   background-color: #fff;
 }
 
+.branding {
+  width: 100%;
+}
+
 .bg-left {
   width: 50%; /* Takes up 40% of the width */
   background-color: #000; /* Optional for debugging */
@@ -72,3 +91,28 @@
   background-color: #000; /* Optional for debugging */
   padding: 20px;
 }
+
+/* Media Query for Small Screens */
+@media (max-width: 525px) {
+.image-item {
+  max-width: 70%;
+    min-height: 20%;
+    max-height: 30%;
+}
+
+.image-item {
+  flex-basis:content;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 2rem;
+}
+
+
+.portfolio-container {
+  min-width: auto;
+  max-width: 100vw;
+}
+
+  }

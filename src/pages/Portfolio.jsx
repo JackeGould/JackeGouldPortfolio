@@ -9,14 +9,15 @@ function Portfolio() {
         <div className="line3"></div>
         
         {/* Navigation Section */}
-        <div className="nav">
+        <div className="nav-bar">
+          <h3>Sections</h3>
           <nav>
             <ul>
-            <a href="#editorial">Editorial</a>
-            <a href="#ftfo">FTFO</a>
-            <a href="#branding">Branding</a>
-            <a href="#info">Infographic</a>
-            <a href="#comic">Comic</a>
+            <li><a href="#editorial">Editorial</a></li>
+            <li><a href="#ftfo">FTFO</a></li>
+            <li><a href="#branding">Branding</a></li>
+            <li> <a href="#info">Infographic</a></li>
+            <li> <a href="#comic">Comic</a></li>
             </ul>
           </nav>
         </div>
@@ -30,7 +31,7 @@ function Portfolio() {
           <div className="image-item">
               <img
                 src="../src/assets/images/57.png"
-                style={{ width: "100%", maxWidth: "500px", height: "auto" }}
+                // style={{ width: "100%", maxWidth: "100%", height: "auto" }}
               />
               <h3>Magazine Publication Layout & Design</h3>
               <h4>Adobe Photoshop, Indesign</h4>
@@ -38,7 +39,7 @@ function Portfolio() {
             <div className="image-item">
               <img
                 src="../src/assets/images/58.png"
-                style={{ width: "100%", maxWidth: "500px", height: "auto" }}
+                // style={{ width: "100%", maxWidth: "500px", height: "auto" }}
               />
               <h3>Magazine Publication Layout & Design</h3>
               <h4>Adobe Photoshop, Indesign</h4>
@@ -46,7 +47,7 @@ function Portfolio() {
             <div className="image-item">
               <img
                 src="../src/assets/images/59.png"
-                style={{ width: "100%", maxWidth: "500px", height: "auto" }}
+                // style={{ width: "100%", maxWidth: "500px", height: "auto" }}
               />
               <h3>Magazine Publication Layout & Design</h3>
               <h4>Adobe Photoshop, Indesign</h4>
@@ -54,7 +55,7 @@ function Portfolio() {
             <div className="image-item">
               <img
                 src="../src/assets/images/60.png"
-                style={{ width: "100%", maxWidth: "500px", height: "auto" }}
+                // style={{ width: "100%", maxWidth: "500px", height: "auto" }}
               />
               <h3>Magazine Publication Layout & Design</h3>
               <h4>Adobe Photoshop, Indesign</h4>
@@ -62,7 +63,7 @@ function Portfolio() {
             <div className="image-item">
               <img
                 src="../src/assets/images/61.png"
-                style={{ width: "100%", maxWidth: "500px", height: "auto" }}
+                // style={{ width: "100%", maxWidth: "500px", height: "auto" }}
               />
               <h3>Magazine Publication Layout & Design</h3>
               <h4>Adobe Photoshop, Indesign</h4>
@@ -70,7 +71,7 @@ function Portfolio() {
             <div className="image-item">
               <img
                 src="../src/assets/images/62.png"
-                style={{ width: "100%", maxWidth: "500px", height: "auto" }}
+                // style={{ width: "100%", maxWidth: "500px", height: "auto" }}
               />
               <h3>Magazine Publication Layout & Design</h3>
               <h4>Adobe Photoshop, Indesign</h4>
@@ -79,7 +80,7 @@ function Portfolio() {
             <div className="image-item">
               <img
                 src="../src/assets/images/17.png"
-                style={{ width: "100%", maxWidth: "500px", height: "auto" }}
+                // style={{ width: "100%", maxWidth: "500px", height: "auto" }}
               />
               <h3>Magazine Publication Layout & Design</h3>
               <h4>Adobe Photoshop, Indesign</h4>
@@ -87,7 +88,7 @@ function Portfolio() {
             <div className="image-item">
               <img
                 src="../src/assets/images/18.png"
-                style={{ width: "100%", maxWidth: "500px", height: "auto" }}
+                // style={{ width: "100%", maxWidth: "500px", height: "auto" }}
               />
               <h3>Magazine Publication Layout & Design</h3>
               <h4>Adobe Photoshop, Indesign</h4>
@@ -95,11 +96,11 @@ function Portfolio() {
             <div className="image-item">
               <img
                 src="../src/assets/images/16.png"
-                style={{ width: "100%", maxWidth: "500px", height: "auto" }}
+                // style={{ width: "100%", maxWidth: "500px", height: "auto" }}
               />
               <h3>Magazine Publication Layout & Design</h3>
               <h4>Adobe Photoshop, Indesign</h4>
-            </div>
+            
           </div>
         </div>
       </div>
@@ -158,13 +159,13 @@ function Portfolio() {
         <div className="image-item">
               <img
                 src="../src/assets/images/67.png"
-                style={{ width: "100%", maxWidth: "500px", height: "auto" }}
+                // style={{ width: "100%", maxWidth: "500px", height: "auto" }}
               />
               </div>
               <div className="image-item">
               <img
                 src="../src/assets/images/mockup.png"
-                style={{ width: "100%", maxWidth: "500px", height: "auto" }}
+                // style={{ width: "100%", maxWidth: "500px", height: "auto" }}
               />
 
 </div>
@@ -323,6 +324,7 @@ function Portfolio() {
               <h4>Adobe Photoshop, Indesign</h4>
             </div> */}
         </div>
+      </div>
       </div>
 
     </div>
